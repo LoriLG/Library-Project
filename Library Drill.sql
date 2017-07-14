@@ -77,7 +77,7 @@ SELECT * FROM book_authors;
 
 CREATE TABLE PUBLISHER (
 	 
-     Name VARCHAR(100) PRIMARY KEY NOT NULL,
+         Name VARCHAR(100) NOT NULL,
 	 Address VARCHAR(100) NOT NULL,
 	 Phone VARCHAR(20) NOT NULL
 );
@@ -304,7 +304,7 @@ WHERE BOOK.Title = @Title AND LIBRARY_BRANCH.BranchName= @BranchName
 
 GO
 
-EXEC dbo.uspLostTribeShapstown @Title = 'The Lost Tribe', @BranchName = 'Sharpstown'
+EXEC dbo.uspLostTribeSharpstown @Title = 'The Lost Tribe', @BranchName = 'Sharpstown'
 
 
 /* End Query #1 */
